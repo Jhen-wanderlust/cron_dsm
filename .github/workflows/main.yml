@@ -2,7 +2,7 @@ name: Run DSM Webhook
 
 on:
   schedule:
-    - cron: "0 14 * * *"  # Runs daily at 14:00 UTC (7 AM UTC-7)
+     - cron: "*/1 * * * *"  # Runs every 1 minute
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
