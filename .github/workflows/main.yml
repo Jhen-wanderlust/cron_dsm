@@ -1,0 +1,19 @@
+name: Run DSM Webhook
+
+on:
+  schedule:
+    - cron: "0 14 * * *"  # Runs daily at 14:00 UTC (7 AM UTC-7)
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  run-webhook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Execute Webhook Script
+        run: |
+          chmod +x dsm_webhook.sh
+          ./dsm_webhook.sh
