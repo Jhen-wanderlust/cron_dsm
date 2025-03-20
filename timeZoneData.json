@@ -1,0 +1,31 @@
+{
+  "text": "DSM Schedule",
+  "attachments": [
+    {
+      "color": "#36a64f",
+      "title": "Time Zone Information",
+      "fields": [
+        {
+          "title": "Los Angeles",
+          "value": "Before DST: 7:00 - 8:00 AM PST (UTC-8)\nDuring Ramadan: 7:00 - 8:00 AM PDT (UTC-7)\nAfter Ramadan: 6:00 - 7:00 AM PDT (UTC-7)",
+          "short": false
+        },
+        {
+          "title": "Pakistan",
+          "value": "Before DST: 8:00 - 9:00 PM PKT (UTC+5)\nDuring Ramadan: 7:00 - 8:00 PM PKT (UTC+5)\nAfter Ramadan: 6:00 - 7:00 PM PKT (UTC+5)",
+          "short": false
+        },
+        {
+          "title": "Ukraine",
+          "value": "Before DST: 5:00 - 6:00 PM EET (UTC+2)\nDuring Ramadan: 4:00 - 5:00 PM EEST (UTC+3)\nAfter Ramadan: 3:00 - 4:00 PM EET (UTC+2)",
+          "short": false
+        },
+        {
+          "title": "Philippines",
+          "value": "Before DST: 11:00 PM - 12:00 AM PST (UTC+8)\nDuring Ramadan: 10:00 - 11:00 PM PST (UTC+8)\nAfter Ramadan: 9:00 - 10:00 PM PST (UTC+8)",
+          "short": false
+        }
+      ]
+    }
+  ]
+}
