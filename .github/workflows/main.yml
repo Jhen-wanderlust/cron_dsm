@@ -17,4 +17,5 @@ jobs:
         run: chmod +x dsm_webhook.sh
 
       - name: Run Webhook Script
-        run: ./dsm_webhook.sh
+        run:  bash dsm_webhook.sh
+
