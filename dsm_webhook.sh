@@ -1,3 +1,4 @@
-curl -X POST -H 'Content-type: application/json' --data @timeZoneData.json https://hooks.slack.com/services/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
+webhook_url=$SLACK_WEBHOOK_URL
+curl -X POST -H 'Content-type: application/json' --data @timeZoneData.json "$webhook_url"
 
 echo "Payload sent to Slack webhook successfully."
