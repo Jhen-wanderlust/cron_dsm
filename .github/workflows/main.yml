@@ -17,5 +17,7 @@ jobs:
         run: chmod +x dsm_webhook.sh
 
       - name: Run Webhook Script
-        run:  bash dsm_webhook.sh
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: ./dsm_webhook.sh
 
