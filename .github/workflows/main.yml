@@ -2,7 +2,7 @@ name: Run DSM Webhook
 
 on:
   schedule:
-     - cron: "*/1 * * * *"  # Runs every 1 minute
+    - cron: "*/1 * * * *"  # Runs every 1 minute
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -13,7 +13,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Execute Webhook Script
-        run: |
-          chmod +x dsm_webhook.sh
-          ./dsm_webhook.sh
+      - name: Give Execute Permissions
+        run: chmod +x dsm_webhook.sh
+
+      - name: Run Webhook Script
+        run: ./dsm_webhook.sh
